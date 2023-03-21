@@ -6,186 +6,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
+
+  <style>
+
+:root {
+  
+  --primary-color: hsl(9, 94%, 61%);
+  --primary-color-alt: hsl(28, 72%, 83%);
+  --second-color: #3e537c;
+  --second-color-alt: hsla(220, 33%, 36%, 65%);
+  --third-color: hsl(220, 36%, 28%);
+  --white-color: #fbfbfb;
+  --white-color-alt: hsl(12, 14%, 93%);
+  --dark-color: hsl(300, 100%, 0%);
+}
+
+
+
+  </style>
 </head>
 <body>
-  <script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script> 
-  <header class="headerr">
-    <div class="brandd"><a href="#">Tolga Samet</a></div>
-    <div class="navv">
-      <nav>
-        <ul>
-          <li><a href="#">INTRO</a></li>
-          <li><a href="#">OWERVIEW</a></li>
-          <li><a href="#">SPEAKERS</a></li>
-  
-          <li><a href="#" class="dropdown-toggle">Programs</a>
-            <div class="dropdownn">
-              <a href="#">Car</a>
-              <a href="#">Photo</a>
-              <a href="#">About</a>
-              <a href="#">Home</a>
-            </div>
-          </li>
-          <li><a href="#">REGISTER</a></li>
-          <li><a href="#">VENUE</a></li>
-          <li><a href="#">SPONSORS</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <header class="mobilheader">
-    <i class="fas fa-bars"></i>
-    <span><a href="#">Tolga <b class="animate">Samet</b></a></span>
-    <div class="menu">
-      <i class="fas fa-times"></i>
-      <ul>
-        <li><a href="#">INTRO</a></li>
-        <li><a href="#">OWERVIEW</a></li>
-        <li><a href="#">SPEAKERS</a></li>
-  
-        <li><a class="dropdown-toggle droplinkmobil" style="cursor: pointer;">Programs</a></li>
-        <div class="dropdownnmobil">
-          <a href="#">Car</a>
-          <a href="#">Photo</a>
-          <a href="#">About</a>
-          <a href="#">Home</a>
-        </div>
-  
-        <li><a href="#">REGISTER</a></li>
-        <li><a href="#">VENUE</a></li>
-        <li><a href="#">SPONSORS</a></li>
-        <li><a href="#">CONTACT</a></li>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+  <header>
+    <div class="company-logo">Fogsmen</div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">OFFER</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">SHOP</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
       </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
     </div>
   </header>
-  
-  <div class="slide">
-    <div class="col1"><span>July 22 - 26 in San Francisco, CA</span></div>
-    <div class="col2"><span><i>Tolga Samet</i></span></div>
-    <div class="col3">
-      <button class="btn btn1">Learn More</button>
-      <button class="btn btn2">REGISTER NOW</button>
-    </div>
-  </div>
-  
-  <div class="bialt">
-    <div class="text">
-      <h3>
-        New Event is a fully responsive one-page <br> template for events, conferences or<br> workshops.
-      </h3>
-      <p>This is a Bootstrap v3.3.6 layout that is responsive and mobile friendly. You may download and modify this template for your website. Please tell your friends about templatemo.</p>
-      <p>Quisque facilisis scelerisque venenatis. Nam vulputate ultricies luctus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-    </div>
-  
-    <div class="img">
-      <img src="https://i.hizliresim.com/WXM4g2.jpg">
-    </div>
-  </div>
-  
-  <div class="programs">
-    <div class="program1 program">
-      <div><i class="fas fa-users"></i></div>
-      <div>
-        <h3>650 Participants</h3>
+  <main>
+    <!-- HOME SECTION -->
+    <section class="container section-1">
+      <div class="slogan">
+        <h1 class="company-title">Fogsmen</h1>
+        <h2 class="company-slogan">
+          Website
+        </h2>
       </div>
-      <div>
-        <p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
+      <div class="home-computer-container">
+        <img class="home-computer" src="20220601123652_IMG_0044.jpg" alt="a computer in dark with shadow" class="home-img">
       </div>
-    </div>
-  
-    <div class="program2 program">
-      <div><i class="far fa-clock"></i></div>
-      <div>
-        <h3>24 Programs</h3>
-      </div>
-      <div>
-        <p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
-      </div>
-    </div>
-  
-    <div class="program3 program">
-      <div><i class="fas fa-microphone"></i></div>
-      <div>
-        <h3>11 Speakers</h3>
-      </div>
-      <div>
-        <p>Quisque ut libero sapien. Integer tellus nisl, efficitur sed dolor at, vehicula finibus massa. Sed tincidunt metus sed eleifend suscipit.</p>
-      </div>
-    </div>
-  </div>
-  <script>$(() => {
-    $("body").delay("slow").fadeIn(function() {
+    </section>
 
-        if ($(window).width() > 785) {
-            $(".headerr").css({
-                display: "flex"
-            });
-            $(".headerr").animate({
-                width: "100%"
-            }, function() {
-                $(".navv li").delay("slow").fadeIn(function() {
-                    $(".brandd").delay("slow").fadeIn(function() {
-                        $(".slide .col2").delay("slow").fadeIn(function() {
-                            $(".slide .col1").delay("slow").fadeIn(function() {
-                                $(".slide .col3").delay("slow").fadeIn(function() {});
-                            })
-                        });
-                    });
-                });
-            });
-        } else {
-            $(".headerr").css({
-                display: "flex"
-            });
-            $(".headerr").css({
-                width: "100%"
-            });
-            $(".navv li").css({
-                display: "block"
-            });
-            $(".brandd").css({
-                display: "block"
-            });
-            $(".slide div").css({
-                display: "block"
-            });
-        }
-    })
-    $(".fa-bars").click(function() {
-        $(".menu").css({
-            "display": "flex"
-        });
-        $(".menu").animate({
-            "width": "100%"
-        });
-        $(".fa-bars").css({
-            "display": "none"
-        });
-    });
-    $(".fa-times").click(function() {
-        $(".menu").animate({
-            "width": "0%"
-        }, function() {
-            $(".menu").css({
-                "display": "none"
-            });
-            $(".fa-bars").css({
-                display: "block"
-            });
-            $(".dropdownnmobil").css({
-                display: "none"
-            });
-        });
-    });
-    $(".droplinkmobil").click(function() {
-        $(".dropdownnmobil").slideToggle(function() {
-            $(".dropdownnmobil").css({
-                "color": "red"
-            });
-        });
-    })
+    <!-- OFFER SECTION -->
+    <section class="container section-2">
+      <!-- offer 1 -->
+      <div class="offer offer-1">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/offer_1.png?raw=true" alt="a computer in dark with with white shadow" class="offer-img offer-1-img">
+        <div class="offer-description offer-desc-1">
+          <h2 class="offer-title">Macbook pro</h2>
+          <p class="offer-hook">This a Macbook pro nulla vulputate magna vel odio sagittis bibendium...</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+      <!-- offer 2 -->
+      <div class="offer offer-2">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/offer_2.png?raw=true" alt="a opened computer" class="offer-img offer-2-img">
+        <div class="offer-description offer-desc-2">
+          <h2 class="offer-title">Lenovo</h2>
+          <p class="offer-hook">This a Lenovo nulla vulputate magna vel odio sagittis bibendium...</p>
+          <div class="cart-btn">ADD TO CART</div>
+        </div>
+      </div>
+    </section>
 
-});</script>
+    <!-- PRODUCT SECTION -->
+    <section class="container section-3">
+      <!-- product - 1 -->
+      <div class="product product-1">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/comp_1.png?raw=true" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 2 -->
+      <div class="product product-2">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/comp_2.png?raw=true" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 3 -->
+      <div class="product product-3">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/comp_3.png?raw=true" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+      <!-- product - 4 -->
+      <div class="product product-4">
+        <img src="https://github.com/r-e-d-ant/Computer-store-website/blob/main/assets/images/comp_4.png?raw=true" alt="computer to sell" class="product-img">
+        <span class="product_add_cart">ADD TO CART</span>
+      </div>
+    </section>
+
+    <!-- SPONSOR SECTION -->
+    <section class="container section-4">
+      <!-- SPONSOR group 1 -->
+      <div class="sponsor sponsor-1"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/microsoft.svg" alt=""></div>
+      <div class="sponsor sponsor-2"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/apple.svg" alt=""></div>
+
+      <!-- SPONSOR group 2 -->
+      <div class="sponsor sponsor-3"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/dell.svg" alt=""></div>
+      <div class="sponsor sponsor-4"><img src="https://raw.githubusercontent.com/r-e-d-ant/Computer-store-website/b90ac65459206fef22e9b87313f587185554263b/assets/images/ibm.svg" alt=""></div>
+    </section>
+
+    <!-- SUBSCRIBE SECTION-->
+    <section class="container section-5">
+      <h2 class="subscribe-input-label">NEWSLETTER</h2>
+      <div class="subscribe-container">
+        <input type="text" id="email-subscribe" placeholder="Email address...">
+        <input type="submit" value="SUBSCRIBE">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container top-footer">
+      <!-- footer item 1 -->
+      <div class="footer-item">
+        <h2 class="footer-title">ADDRESS</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing st18</h3>
+        </div>
+      </div>
+      <!-- footer item 2 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SERVICES</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+      <!-- footer item 3 -->
+      <div class="footer-item">
+        <h2 class="footer-title">SUPPLIERS</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+      <!-- footer item 4 -->
+      <div class="footer-item">
+        <h2 class="footer-title">INVESTMENT</h2>
+        <div class="footer-items">
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+          <h3>Adipisicing elit.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container end-footer">
+      <div class="copyright">copyright © 2021 - Present • <b>DOWNTOWN TECH LIVER</b></div>
+      <a class="designer" href="#">Thierry M</a>
+    </div>
+    <script>
+      'use strict'
+      
+      const menuToggle = document.querySelector('.menu-toggle');
+      const bxMenu = document.querySelector('.bx-menu');
+      const bxX = document.querySelector('.bx-x');
+      
+      const navBar = document.querySelector('.navbar');
+      
+      // --- open menu ---
+      
+      bxMenu.addEventListener('click', (e)=> {
+          if(e.target.classList.contains('bx-menu')){
+              navBar.classList.add('show-navbar');
+              bxMenu.classList.add('hide-bx');
+              bxX.classList.add('show-bx');
+          }
+      })
+      
+      // --- close menu ---
+      
+      bxX.addEventListener('click', (e)=> {
+          if(e.target.classList.contains('bx-x')){
+              navBar.classList.remove('show-navbar');
+              bxMenu.classList.remove('hide-bx');
+              bxX.classList.remove('show-bx');
+          }
+      })
+      
+      </script>
+  </footer>
+
 </body>
 </html>
