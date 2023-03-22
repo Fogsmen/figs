@@ -1,121 +1,368 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-html,
-
-.open,
-.close {
-  display: inline-block;
-  padding: 30px 0 0 30px;
-  cursor: pointer;
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.overlay {
-  position: fixed;
-  width: 0;
-  top: 0;
-  background-color: #333;
-  opacity: 0.7;
-  overflow-x: hidden;
+html, body{
   height: 100%;
-  transition: 0.5s;
+  overflow: auto;
+} 
+html {
+  font-size: 16px;
 }
 
-.overlay-content {
+
+
+h1 {
+  color: #ffeecc;
   text-align: center;
-  position: relative;
-  width: 100%;
-  padding-top: 50px;
-  margin-top: 30px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  margin-top: 5%; 
 }
 
-.overlay-content a {
-  font-size: 2rem;
-  color: #fff;
-  display: block;
-  padding: 10px;
-  margin-bottom: 4px;
+h2 {
+  color: #2e5d94;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+  margin-bottom: 2%;
+  text-shadow: 2px 2px 2px #3b6397; 
+}
+
+h3 {
+  color: #2e5d94;
+  font-family: 'Amatic SC', cursive;
+}
+
+a {
   text-decoration: none;
-  transition: 0.3s;
-  position: relative;
-}
-.overlay-content a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0%;
-  transform: translateX(-50%);
-  height: 3px;
-  background: #fff;
-  transition: 0.3s;
-  display: block;
-}
-.overlay-content a:hover {
-  color: #ff9f1a;
 }
 
-.overlay-content a:hover:after {
-  width: 25%;
+p {
+  font-family: 'Dosis', sans-serif; 
+}
+
+ul {
+ list-style-type: none;
+  margin: 0;
+  padding: 0;   
+}
+
+ul li {
+  display: inline; 
+}
+
+hr {
+  /* I have to override Bootstrap built-props for this... */
+  border-top: 1px double #ffeecc !important;
+  margin-top:0px !important;
+  margin-bottom:30px !important; 
+  text-align: center;
+  width: 50%;
 }
 
 
+/*========== Header ==========*/
 
+/*.lead {
+  font-family: 'Courgette', cursive;
+}*/
 
+.mainTitle {
+  font-size: 4em;
+}
 
+#headTitle {
+  margin-top: 7%
+}
 
-
-
-
-content{
+#slogan {
+  color: #ffeecc;
+   font-family: 'Courgette', cursive;
+  font-size: 2em;
+  margin-top: 0;
+  padding-bottom: 50%;
   text-align: center;
 }
 
-.content h1{
-  font-size: 95px;
-  color: #000000;
-  margin-bottom: 50px;
+/*========== Navigation ==========*/
+
+nav {
+  background-color: #000000;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;   
 }
 
-.content a{
-  font-size: 23px;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #fff;
-  padding: 15px 25px;
-  border-radius: 50px;
-  transition: 0.3s;
+nav li {	
+  font-size: 1.5em;
+  padding-right: 15px;
 }
 
-.content a:hover{
-  background-color: #fff;
-  color: #000;
+/*========== Section ==========*/
+/*
+O. general section settings
+1. Performances
+2. About Us
+3. Prices
+4. Contact Us.
+*/
+
+/*----- 0. General Section settings*/
+
+section {
+  margin-top: 0%;
 }
 
-.background-clip{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
+section .title {
+  font-size: 3em;
 }
 
-@media (min-aspect-ratio:16/9) {
-  .background-clip{
-      width: 100%;
-      height: auto;
-  }
+.jumbotron { 
+  /*margin: 0 0 0 0;*/
+  background-color: #000000;
+  margin-bottom: 0px !important; /* had to override bootstrap default magin bottom for jumbotron. (it was fine on local files, but a white margin was displayed on codepen*/
+  padding: 0px;
 }
 
-@media (max-aspect-ratio:16/9) {
-  .background-clip{
-      width: auto;
-      height: 100%;
-  }
+.parallax {
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
+
+
+.title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.titledark {
+  color: #2e5d94;
+  text-shadow: 2px 2px 2px #3b6397;
+}
+
+.titlelight {
+  color: #ffeecc;
+  text-shadow: 2px 2px 2px #f1e4be;
+}
+
+
+/*--- 1. Performances ---*/
+
+.caption {
+  margin: 2% 5% 2% 2%;
+  font-size: 2em;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.parallaxSection2 {    
+  background-image: url("https://aurelie-bayre.com/wildcircuspics/bubblybg.jpg");
+  color: rgb(36, 92, 145);   
+}
+
+.perfImages {
+  border-radius: 12px;
+  margin-left: 3%;
+  width: 90%;
+  max-width: 70%;
+}
+
+#performances {
+  display: table;
+  margin: 8% 3% 5% 3%;
+}
+
+#performances li {
+  display: table-cell;
+  margin: 0 1% 0 1%;  
+  width: 30%;   
+}
+
+#performances li h3 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+/*------2. About Us ------*/
+
+
+#aboutIntro {
+  font-size: 1.333em;
+  font-style: italic;
+  text-align: center;	
+}
+
+.aboutSelectors {
+  font-size: x-large;
+  text-align: center;
+  cursor: pointer;		
+}
+
+.aboutSelectors span:hover {
+  text-decoration: underline #ffeecc;
+}
+
+.aboutSlogan {
+  display: block;
+  font-family: 'Courgette', cursive;
+  font-size: 1.8em;
+  text-align: center;	
+  margin: 5% 5% 3% 5%;
+}
+
+.animateAbout {	
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5% 5% 10% 5%; 
+}
+
+.parallaxSection3 {
+  background: 
+    linear-gradient(rgba(141,153,174,0.4),rgba(141,153,174,0.2)), 
+    url("https://aurelie-bayre.com/wildcircuspics/bambi.jpg") no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  color: #ffeecc;
+}
+
+
+/*--- 3. Prices ---*/
+
+#announcement {
+  font-size: 1.789em;
+  text-align: center;
+}
+
+.table {
+  color: #2e5d94;
+  margin-top: 10%
+}
+
+td {
+  text-align: center;
+}
+
+#prices th {
+  text-align: center;
+}
+
+
+/*--- 4. Contact Us ---*/
+
+
+
+form {
+  margin-top: 4%;
+  padding: 3%;
+}
+
+form label {
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: small;
+  
+}
+
+#contactForm {
+  background-color: #343538;
+  border-radius: 7px;
+}
+.form-text {
+  color: rgb(212, 212, 212);
+  
+}
+#contactbtn {
+  box-shadow: 2px 4px 0 0 #3b6397;
+  
+}
+
+#contactbtn:active {
+  background: #33a6cc;
+  box-shadow: none;
+  margin-bottom: -4px;
+  margin-top: 4px;
+}
+
+.parallaxSection4 {
+  background-image: url("https://aurelie-bayre.com/wildcircuspics/parade.jpg");
+}
+
+.translucidBg { 	
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  /* IE 7 and even older... duh. */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000, endColorstr=#77000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#77000000, endColorstr=#77000000)";
+
+  border-radius: 7px;
+}
+/*-------------- Footer --------------*/
+
+footer {
+  background-color: #000000;
+  font-size: 0.8em;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+footer p{
+  color: rgb(192, 208, 223);
+  margin-bottom: 0px;
+}
+
+footer a {
+  color: rgb(216, 195, 233);
+}
+
+footer a:hover {
+  color: rgb(245, 205, 225);
+}
+
+/*-------------- Responsive rules --------------*/
+
+@media (max-width: 420px) {
+html {
+  font-size: 10px;
+}
+.caption {
+  font-size: 1.2em;
+}
+}
+
+@media (min-width: 800px) and (max-width: 1366px) {
+html {
+  font-size: 14px;
+}
+.caption {
+  font-size: 1em;
+}
+
+#performances {
+  margin: 3% 3% 5% 3%;
+}
+
+.table {
+  margin-top: 5%;
+}
+}
+
+@media (min-width: 1440px) {
+html {
+  font-size: 20px;
+}
+
+#performances {
+  margin-top: 4%;
+}
+.caption {
+  font-size: 1em;
+}
+
+.table {
+  margin-top: 3%;
+}
+}
+
