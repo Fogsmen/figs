@@ -1,272 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
-  <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <title>Wild Circus</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Courgette|Dosis" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/73d812ac28.css">
-  <link rel="stylesheet" href="style.css">
-  <!--- uncomment on local files: <link href="monstyle2.css" rel="stylesheet" type="text/css"> -->
-  <style>body {
-    background-color: black;
 
-  
-  } 
-  
-  .parallaxSection {
-  background-image: url("20220601123652_IMG_0044.jpg");
-  background-position: center;
-  background-size: cover;
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Northstreet Restaurant">
+    <meta name="author" content="A.K.">
+    <link rel="stylesheet" href="style.css">
 
-  </style>
+    <title>Restaurant Northstreet</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+
+    <!-- Custom CSS -->  
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
-<body>
-  <header>
-    <div class="jumbotron jumbotron-fluid parallax parallaxSection">
-      <div id="headTitle">
-        <h1 class="title titlelight mainTitle">Wild Circus</h1>
-        <p id="slogan">as wild as your wildest dreams!</p>
-      </div>
-      <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#circusNavbar" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body id="myPage"  data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Restaurant Northstreet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#" id="brand">
-          <i class="fa fa-star" aria-hidden="true"></i>
-          Wild Circus 
-          <i class="fa fa-star" aria-hidden="true"></i>
-        </a>
-        <div id="circusNavbar" class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-          <!-- TODO: Les liens du menu doivent nous emmener vers les sections correspondantes dans la page -->
-            <li class="nav-item"><a class="nav-link" href="#perf">Performances</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#service">Service</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>  
+            </ul>
+        </div>  
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <div class="header-content-inner">
+                <h1>Welcome to Northstreet restaurant</h1> 
+                <h3>We are proud of our long history of making delicious meals, warm and 
+                friendly atmosphere and professional staff.</h3>
+            </div>
         </div>
-      </nav>
     </div>
-  </header>
 
-  <div class="jumbotron parallax parallaxSection2">
-    <section id="perf">
-      <h2 class="title titledark">Performances</h2>
-      <!-- TODO: En utilisant du css place ces trois performances ("lough", "dream, "marvel at") sur la même ligne en enlevant le point généré par la balise "li" -->
-      <ul id="performances">
-        <li>
-          <h3 class="title">Laugh</h3>
-          <img src="https://aurelie-bayre.com/wildcircuspics/magicianwomanstars.jpg" class="img-fluid perfImages" alt="silouhette of a clown woman on a starry background">
-          <p class="caption">As an adult, come and discover our irresistible clowns, between practical jokes and pranks let yourself be carried away by their joy and fall back into childhood.</p>
-        </li>
-        <li>
-          <h3 class="title">Dream</h3>
-          <img src="https://aurelie-bayre.com/wildcircuspics/flyingwoman.jpg" class="img-fluid perfImages" alt="woman magically floating in midair">
-          <p class="caption">Let yourself be carried away in a world where the real and the imaginary are one, in the company of our talented magicians, discover a wonderful world limited only by your imagination.</p>
-        </li>
-        <li>
-          <h3 class="title">Marvel at</h3>
-          <img src="https://aurelie-bayre.com/wildcircuspics/tiger.jpg" class="img-fluid perfImages" alt="tiger quietly sitting on a tree stump">
-          <p class="caption">Tame the untameable in the company of our tamers, between roar and razor-sharp claws, watch these fierce felines turn into sweet kittens.</p>
-        </li>
-      </ul>
+    <section class="bg-about bg-section" id="about">
+        <div class="container-fluid">
+            <h1 class="container-h1">About</h1>
+            <div class="row">
+                <div class="col-sm-5">
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/warm_welcome.jpg" alt="Warm welcome" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Warm welcome</h5>
+                                <p>It had separate tables, a menu, and specialized in soups made with a base of meat and eggs, which were said to be restaurants or, in English "restoratives".</p>
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/delicious_meals.jpg" alt="Delicious meals" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Delicious meals</h5>
+                                <p> In about 1765 a new kind of eating establishment, called a "Bouillon", was opened on rue des Poulies, near the Louvre, by a man named Boulanger.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hov-img">
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951746/new/professional_staff.jpg" alt="Professional staff" class="hov-img-bottom img-fluid">
+                        <div class="hov-img-top hov-img-slideup">
+                            <div class="hov-img-text">
+                                <h5>Professional staff</h5>
+                                <p>For centuries Paris had taverns which served food at large common tables, but they were notoriously crowded, noisy, not very clean, and served food of dubious quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="row ">
+                        <div class="restaurant-history slideanim text-center">
+                            <h3 class="section-heading">Restaurant Northstreet</h3>
+                            <p class="about-history first">The modern idea of a restaurant – as well as the term itself – appeared in Paris in the 18th century. For centuries Paris had taverns which served food at large common tables, but they were notoriously crowded, noisy, not very clean, and served food of dubious quality. In about 1765 a new kind of eating establishment, called a "Bouillon", was opened on rue des Poulies, near the Louvre, by a man named Boulanger.<br /> <br >
+                            It had separate tables, a menu, and specialized in soups made with a base of meat and eggs, which were said to be restaurants or, in English "restoratives". Other similar bouillons soon opened around Paris.
+                            In about 1765 a new kind of eating establishment, called a "Bouillon", was opened on rue des Poulies, near the Louvre, by a man named Boulanger.
+                            It had separate tables, a menu, and specialized in soups made with a base of meat and eggs, which were said to be restaurants or, in English "restoratives". Other similar bouillons soon opened around Paris.
+                            </p>
+
+                            <button type="button" class="btn more" id="more" data-toggle="collapse" data-target="#demo">More</button>
+                            <div id="demo" class="collapse">  
+                                <p class="about-history"> Thanks to Boulanger and his imitators, these soups moved from the category of remedy into the category of health food and ultimately into the category of ordinary food. Their existence was predicated on health, not gustatory, requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>     
+        </div>
     </section>
-  </div>
 
-  <div class="jumbotron parallax parallaxSection3">
-    <hr/>
-    <section id="about" class="container">
-    <!-- TODO: Cette section n'a pas encore été réalisée, tu as carte blanche pour nous montrer ta créativité -->
-      <h2 class="title titlelight">About Us</h2>      
-      <p id="aboutSlogan" class="aboutSlogan">We believe in miracles, and we know how to make them happen!
-			</p>	
-      <p id="aboutIntro" >
-      We add our very own mix of innovation and poetry to the traditional elements of the circus in order to reveal the beauty of life:
-      </p>
-      <p class="aboutSelectors"><span id="imagination"><i class="fa fa-angle-right" aria-hidden="true"></i>
- Imagination</span>  <span id="technology"><i class="fa fa-angle-right" aria-hidden="true"></i>
- Technology</span>  <span id="innocence"><i class="fa fa-angle-right" aria-hidden="true"></i>
- Innocence</span></p>            
-      <div id="aboutContainer">
-        <p id="aboutImagination" class="animateAbout">To start with, most of our events take place outdoors, preferably in a forest. A circus is a portal to another dimension, in which anything becomes possible... Nature helps our visitors experience the eerie feeling of traveling through dimensions!
-        </p>
-        <p id="aboutTechnology" class="animateAbout">Let wild animals be wild...and free! We value animal well-being, and we are
-        also huge AI geeks. Therefore we have developed <em>unique technologies</em> that replicate animal behaviours: <em>WildSentient&#169;, FantasgeekBeasts&#169;, Zoologeek&#169;</em>, to name a few.
-        </p>
-        <p id="aboutInnocence" class="animateAbout">This is how we became the first circus to showcase a <em>Unicorn!</em> This Unicorn symbolizes all the values we would like to bring to the world: <em>imagination, innovation and innocence</em>. 
-        </p>
-      </div>
+    <section class="bg-menu bg-section" id="menu">
+        <div class="container-fluid">
+            <h1 class="container-h1">Menu</h1>
+            <div class="row">
+                
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#breakfast">Breakfast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#lunch">Lunch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#dinner">Dinner</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#dessert">Dessert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#salads">Salads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#drinks">Drinks</a>
+                        </li>
+                    </ul>
+                    
+
+                    <!-- Tab panes -->
+                    <div class="tab-content slideanim">
+                        <div id="breakfast" class="tab-pane fade show active">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Breakfast</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951905/new/breakfast.jpg" class="menu-img img-fluid" alt="breakfast-img">
+                                    </div>
+                                </div>
+                            </div>      
+                        </div>
+                        <div id="lunch" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Lunch</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/lunch.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div id="dinner" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Dinner</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/dinner.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="dessert" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Dessert</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951905/new/dessert.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="salads" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Salads</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/salads.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="drinks" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Spanish tortilla<span class="badge pull-right">5.90 €</span></h4>
+                                          <p class="list-group-item-text">potatoes, onion, olive oil, free-range eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Quick fish cakes<span class="badge pull-right">6.80 €</span></h4>
+                                          <p class="list-group-item-text">skinless cod, pollock fillets, Maris Piper, flour, olive oil, fresh green herbs, chives, mayonnaise, eggs</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Wild rice salad<span class="badge pull-right">5.20 €</span></h4>
+                                          <p class="list-group-item-text">mixed rice, wild and long-grain, mixed nuts, fresh basil, fresh mint, dried apricots, extra virgin olive oil
+                                          </p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Chicken milanese with spaghetti<span class="badge pull-right">8.70 €</span></h4>
+                                          <p class="list-group-item-text">cloves of garlic, fresh basil, olive oil, plum tomatoes, skinless free-range chicken breasts, plain flour, free-range eggs, breadcrumbs, Parmesan cheese, dried spaghetti</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                          <h4 class="list-group-item-heading">Mango lassi<span class="badge pull-right">3.10 €</span></h4>
+                                          <p class="list-group-item-text">green cardamom pods , optional, ripe mangos, low-fat natural yoghurt, ice cubes, runny honey
+                                          </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="right-cover">
+                                        <h3>Drink</h3>
+                                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536951906/new/drink.jpg" class="menu-img img-fluid" alt="brekfast-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>             
+            </div>
+        </div>
     </section>
-  </div>
-	
-  <div class="jumbotron parallax parallaxSection2">
-    <hr/>
-    <section id="prices" classe="container">
-      <h2 class="title titledark">Prices</h2>
-    <!-- TODO:  Réalise un tableau qui présente les différents prix. Exemple (aggrandis la fenêtre en largeur pour bien voir l'exemple ci-dessous) :
 
-                                  | Adultes | Enfants de moins de 12 ans | Groupes (plus de 10 personnes) | Ecoles
-          Semaines hors mercredi  |         |                         |                                |
-          week-end et mercredi    |         |                         |                                |
-    -->
-      <p id="announcement"></p>
-      <table id="prices" class="table table-bordered">
-        <thead>  
-					<tr>
-            <th>Category</th>
-            <th class="noSpecialPrice">Weekdays<br/>(except Wednesday)</th>
-            <th class="specialPrice">Week-end<br/>and Wednesday</th>
-          </tr>
-				</thead>
-				<tbody>
-          <tr>
-            <th scope="row">Children<br/>(below 12)</th>
-            <td class="noSpecialPrice">10€</td>
-            <td class="specialPrice">8€</td>
-          </tr>
-          <tr>
-            <th scope="row">Adults</th>
-            <td class="noSpecialPrice">15€</td>
-            <td class="specialPrice">12€</td>
-          </tr>
-            <tr>
-            <th scope="row">Groups<br/>(>12)</th>
-            <td class="noSpecialPrice">12€</td>
-            <td class="specialPrice">10€</td>
-          </tr>
-            <tr>
-            <th scope="row">Schools</th>
-            <td class="noSpecialPrice">8€</td>
-            <td class="specialPrice">6€</td>
-          </tr>
-				</tbody>
-      </table>
-    </section>  
-  </div>
+    <section class="bg-service bg-section" id="service">
+        <div class="container-fluid text-center">
+            <h1 class="container-h1">Service</h1>
 
-  <div class="jumbotron parallax parallaxSection4">
-    <hr/>
-    <section id="contact" class="container">
-			<h2 class="title titlelight">Contact Us</h2>
-			<!-- TODO: Réalise un formulaire de contact avec les champs email et message plus un bouton pour envoyer le message.
-						Ce formulaire n'a pas besoin d'être fonctionnel, réalise juste la mise en forme.
-					-->
-			<form class="translucidBg">
-				<div class="form-group row justify-content-center">
-					<label for="userEmail" class="col-form-label col-form-label-lg">Email address</label>					
-					<input type="email" class="form-control" id="userEmail1" aria-describedby="emailHelp" placeholder="Your email address">
-					<small id="emailHelp" class="form-text">(We will never share your data and email adress with anyone.)</small>			
-				</div>
-
-				<div class="form-group row justify-content-center">
-					<label for="emailSubject" class="col-form-label col-form-label-lg">Subject</label>					
-						<select class="form-control" id="emailSubject">
-							<option>Booking - adults and children</option>
-							<option>Booking : groups</option>
-							<option>Booking : schools</option>
-							<option>Additional information</option>
-							<option>Human Resources: applying to Wild Circus</option>
-						</select>					
-				</div>
-				<div class="form-group row justify-content-center">					
-						<label for="textArea">Your message</label>
-						<textarea class="form-control" id="textArea" rows="3"></textarea>				
-				</div>
-				<button id="contactbtn" type="submit" class="btn btn-primary">Send</button>
-			</form>
+            <div class="row service-round-3 slideanim">
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round b-party">
+                        <i class="fa fa-4x fa fa-birthday-cake sr-icons"></i>
+                    </div>
+                    <h4>Birthday party</h4>
+                    <p>For more information please contact us.</p>
+                </div>
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round wedding">
+                        <i class="fa fa-4x fa fa-heart sr-icons"></i>
+                    </div>    
+                    <h4>Wedding</h4>
+                    <p>For more information please contact us</p>
+                </div>
+                <div class="col-sm-4 text-center round">
+                    <div class="service-round b-dinner">
+                        <i class="fa fa-4x fa fa-suitcase  sr-icons"></i>
+                    </div>
+                    <h4>Business dinner</h4>
+                    <p>For more information please contact us.</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact us</a>
+        </div>
     </section>
-  </div>
 
-  <footer>
-    <!-- TODO: Entre ton nom et prénom.
-          Mets en place un lien vers le site de la Wild Code School (https://wildcodeschool.fr).
-          Tu peux egalement mettre un lien sur ton nom vers ton site, ton blog ou ton profil github ou linkedin, si tu en a un.
-        -->
-    <p>Wild Circus by Aurélie Bayre - <a href="https://aurelie-bayre.com/blog/" target="_blank" rel="noopener noreferrer">Blog</a> - <a href="https://twitter.com/aurelieBayre" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a> - <a href="https://github.com/AurelieBayre" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a> - <a href="https://codepen.io/alphabetacoder/#" target="_blank" rel="noopener noreferrer"><i class="fa fa-codepen" aria-hidden="true"></i></a> - <a href="https://www.linkedin.com/in/aureliebayre/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a> - <a href="http://www.france-ioi.org/user/perso.php?sLogin=aureliebayre" target="_blank" rel="noopener noreferrer">France-IOI</a> - <a href="https://www.sololearn.com/Profile/6689025#_=_" target="_blank" rel="noopener noreferrer">SoloLearn</a> - <a href="https://wildcodeschool.fr/" target="_blank" rel="noopener noreferrer">Wild Code School</a> - 4/11/2017</p>
-  </footer>
+    
+    
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<!--- uncomment on local files: <script src="monscript.js"></script> -->
-<script>$(document).ready(function () {
-	$(".animateAbout").hide();
-	
-	$("#imagination").click(function() {
-		$(".animateAbout").hide("slow");
-		$("#aboutImagination").show("slow");
-	})
-	
-	$("#technology").click(function() {
-		$(".animateAbout").hide("slow");
-		$("#aboutTechnology").show("slow");
-	})
-	
-	$("#innocence").click(function() {
-		$(".animateAbout").hide("slow");
-		$("#aboutInnocence").show("slow");
-	})
-	
-	
-	
-	$("#brand").click(function(){
-		$("#slogan").animate({
-    fontSize: "3em",
-  }, 1500 );
-});
-	
-	$("#contactbtn").click(function(){
+    <section id="gallery" class="bg-gallery no-padding">
+        <div class="container-fluid">
+            <h3>Gallery</h3>
+            <hr class="hr-h3s">
+            <div class="row no-gutter gallery slideanim"> 
+                
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s1.jpg" class="img-fluid
+                        " alt="">     
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s2.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s3.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s4.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s5.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-instagram fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952203/new/s6.jpg" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row more-img">
 
-		alert("Thank you! We will reply as soon as possible");
-	})
-	
-	var myDate =  new Date();
-	var day = myDate.getDay();
-	console.log(day);
-	
-	switch(day)
-		{
-			case 0:
-				$(".specialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Sunday. Special prices! ^^");
-				break;
-			case 1:
-				$(".noSpecialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Monday. No special prices!");
-				break;
-			case 2:
-				$(".noSpecialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Tuesday. No special prices, but come back tomorrow!");
-				break;
-			case 3:
-				$(".specialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Wednesday. Special prices! ^^");
-				break;
-			case 4:
-				$(".noSpecialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Thursday. No special prices!");
-				break;
-			case 5:
-				$(".noSpecialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Yay! you made it to Friday. No special prices today but come back tomorrow!");
-				break;
-			case 6:
-				$(".specialPrice").css({"font-size":"120%"});
-				$("#announcement").text("Today is Saturday. Special prices! :)");
-				break;
-			default:
-				$("#announcement").text("We have special prices on weekend and Wednesday.");
-		}
-	
-	
-})
-	</script>
+                    <div class="to-gallery">
+                        <h4>For more pictures visit us on</h4>
+                        <div class="social-networks">
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-staff" id="staff">
+        <div class="container-fluid">
+            <h3>Our staff</h3>
+            <hr class="hr-h3s"> 
+                <div class="row text-center slideanim thumbnail-row">
+                    <div class="col-sm-3">
+                        <div class="staff">
+                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/manager.jpg" class="" alt="chef-img" style="width:170px; height: 170px">
+                            <h5 class="">John Johnson</h5>
+                            <h6>Manager</h6>    
+                        </div>
+                     </div>
+                     <div class="col-sm-3">  
+                        <div class="staff">
+                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952565/new/chef1.jpg" class="" alt="chef-img" style="width:170px; height: 170px">
+                            <h5 class="">Anna Schmidt</h5>
+                            <h6>Chef</h6>         
+                        </div>
+                    </div>  
+                    <div class="col-sm-3">  
+                        <div class="staff">
+                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/chef3.jpg" class="" alt="chef-img" style="width:170px; height: 170px">
+                            <h5 class="">Ivan Gonzales</h5>
+                            <h6>Chef</h6>
+                        </div>
+                    </div>
+                      <div class="col-sm-3">  
+                        <div class="staff">
+                            <img src="https://res.cloudinary.com/dbte0ueti/image/upload/v1536952566/new/chef2.jpg" class="" alt="chef-img" style="width:170px; height: 170px">
+                            <h5 class="">Joseph Martinez</h5>
+                            <h6>Chef</h6>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="bg-testimonials" id="testimonials">
+        <div class="container-fluid">
+            <h3 class="">What people say about us</h3>
+            <hr class="hr-testimonials">
+            <div class="row slideanim">    
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ul>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active">
+                            <h4>The atmosphere in restaurant is friendly, and the
+                            dishes are delicious.</h4>
+                            <h5>Mark Gross</h5>
+                      </div>
+
+                      <div class="carousel-item">
+                            <h4>Delicious meals, warm welcome, excellent service.</h4>
+                            <h5>Nina Hansen</h5>
+                      </div>
+                    
+                      <div class="carousel-item">
+                            <h4>Definitely my favourite restaurant, friendly, clean, 
+                            delicious meals.</h4>
+                            <h5>Maria Fernandez</h5>
+                      </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <section class="bg-contact bg-section" id="contact">
+        <div class="container-fluid">
+            <h1 class="container-h1">Contact us</h1>
+            <div class="row slideanim">
+                <div class="col-md-6 col-sm-6 contact-left">
+                    <div class="left-box">
+                        <address class="contact">
+                            <span class="span-contact">Call:</span>
+                            <br>
+                            +091 1234 5678
+                            <br> 
+                            <span class="span-contact">Email:</span> 
+                            <br>
+                            northstreet@gmail.com
+                            <br>
+                            <span class="span-contact">Visit:</span>  
+                            <br>
+                            22, Northstreet Road
+                            <br>
+                            Melbourne, Victoria
+                            <br>
+                            Australia
+                        </address>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 contact-right" >
+                            
+                            <form novalidate action="mailto:anttnew@gmmmail.com" name="frm" method="post">
+                                 <div class="form-group has-feedback">
+                                    <label class="sr-only">First name:</label>
+                                    <input type="text" name="name" class="form-control" placeholder="First name" required>
+                                    
+                                </div>
+                                 <div class="form-group has-feedback">
+                                    <label class="sr-only">Last name:</label>
+                                    <input type="text" name="surname" class="form-control" placeholder="Last name" required>
+                                    
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label class="sr-only">Email:</label>
+                                    <input type="email" name="email" class="form-control"  placeholder="Email" required>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" name="comment" for="comment">Comment:</label>
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Description"></textarea>
+                                </div>
+                                <div class="contact-buttons pull-left">
+                                    <input type="submit" name="submit"  value="Send" />
+                                    <input type="reset" value="Reset" />
+                                </div>
+                            </form>
+                            
+                </div>
+            </div>
+            <div class="row">
+                <div id="googleMap" style="height:300px;width:100%;"></div>
+
+                <!-- Add Google Maps -->
+                <script src="http://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                var myCenter = new google.maps.LatLng(-37.817110, 144.959128);
+
+                function initialize() {
+                var mapProp = {
+                  center:myCenter,
+                  zoom:12,
+                  scrollwheel:false,
+                  draggable:false,
+                  mapTypeId:google.maps.MapTypeId.ROADMAP
+                  };
+
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+                var marker = new google.maps.Marker({
+                  position:myCenter,
+                  });
+
+                marker.setMap(map);
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+            </div>
+        </div>    
+    </section>
+
+    <footer class="-bg-footer" id="footer">
+        <div class="container-fluid">
+            <div class="row footer-align">
+                <div class="col-md-4 col-sm-4">
+                    <h5>Northstreet</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <p class="footer">
+                            The EU-27 has an estimated 1.6m businesses involved in 'accommodation and food services', more than 75% of which are small and medium enterprises.
+                        </p>
+                        <ul class="social-networks">
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h5>Our contact</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <address>
+                                22, Northstreet Road
+                                <br>
+                                Melbourne, Victoria
+                                <br>
+                                Australia
+                                <br>
+                                <i class="fa fa-phone address"></i> +091 1234 5678
+                                <br>
+                                <i class="fa fa-fax address"></i> +876 5432 1234
+                                <br>
+                                <i class="fa fa-envelope address"></i> <a href="mailto:northstreet@gmail.com">northstreet@gmail.com</a>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <h5>Open hours</h5>
+                    <hr class="hr-foot">
+                    <div class="footer-items">
+                        <ul>
+                            <li>Mon-Fri: 08:00-22:00</li>
+                            <li>Sat    : 09:00-22:00</li>
+                            <li>Sun    : 09:00-16:00</li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a class="to-top" href="#myPage" title="toTop">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </footer>
+    <script>$(function(){
+
+      var nav = $('.navbar'),
+        doc = $(document),
+        win = $(window);
+    
+      win.scroll(function() {
+    
+        if (doc.scrollTop() > 80) {
+          nav.addClass('scrolled');
+        } else {
+          nav.removeClass('scrolled');
+        }
+    
+      });
+    
+      win.scroll();
+    
+    });
+    
+    
+    /* ***** Btn More-Less ***** */
+    $("#more").click(function(){
+        var $this = $(this);
+        $this.toggleClass('more');
+        if($this.hasClass('more')){
+            $this.text('More');         
+        } else {
+            $this.text('Less');
+        }
+    });
+    
+    
+    
+    
+    /* ***** Slideanim  ***** */
+     $(window).scroll(function() {
+      $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+    
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+      });
+    }); 
+    
+    
+    
+    
+    /* ***** Smooth Scrolling  ***** */
+    $(document).ready(function(){ 
+      $(".navbar a, #service a").on('click', function(event) {
+    
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+    
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+    
+          window.location.hash = hash;
+          });
+      } 
+    });
+    
+    
+      /* ***** Scroll to Top ***** */ 
+      $(window).scroll(function() {
+          if ($(this).scrollTop() >= 300) {        
+              $('.to-top').fadeIn(200);    
+          } else {
+              $('.to-top').fadeOut(200);   
+          }
+      });
+      $('.to-top').click(function() {      
+          $('.body,html').animate({
+              scrollTop : 0                       
+          }, 500);
+      });
+    
+    })</script>
+
+    <div class="footer-copyright">
+            <p>&copy 2020 Copyright by  </p>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script>
+     
+    </script>  
+    
 </body>
 
 </html>
